@@ -18,9 +18,10 @@ def plot_amp():
     time_sec = 1.0*fn/fr
     time = time_sec
 
+    # get amp?
     chunk_size = int(fr*time)
     amp = (2**8)**wf.getsampwidth()/2
-    data_read = wf.readframes(chunk_size)
+    data_read = wf.readframes(chunk_size) # get ?
     data_src = np.frombuffer(data_read, "int16")
     data = data_src/amp
 
@@ -60,16 +61,14 @@ def plot_amp():
 
     data_len = len(x)
     print("length :", data_len)
-    ### out, 1323000
-    ### 1323000 = 30 * 44100
-
     print("data :", data)
     print("- - -")
 
 
-
     title = "Plot Amp - \"" + wav_file + "\""
 
+
+    # plot
     plt.title(title)
     plt.xlabel("Times [Sec]")
     plt.ylabel("Amplitude")

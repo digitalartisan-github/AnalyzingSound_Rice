@@ -8,7 +8,8 @@ def print_info():
 
     args = sys.argv
     wav_file  = args[1]
-    # print(wav_file)
+
+    # open file
     wave_r = wave.open(wav_file, "r")
 
     # get info
@@ -20,6 +21,7 @@ def print_info():
     minites = int(time_sec // 60)
     seconds = time_sec % 60
 
+    # print
     print("- - - - -")
     print("Channel :", ch)
     print("Width :", width)
@@ -33,6 +35,7 @@ def print_info():
     #data = wave_r.readframes(wave_r.getnframes())
     wave_r.close()
     #X = fromstring(data, dtype=int16)
+
 
 
 print_info()
