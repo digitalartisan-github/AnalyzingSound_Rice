@@ -9,7 +9,7 @@ def plot_amp():
     args = sys.argv
     wav_file = args[1]
 
-    # opnen wav file
+    # open wav file
     wf = wave.open(wav_file, "r")
 
     channels = wf.getnchannels()
