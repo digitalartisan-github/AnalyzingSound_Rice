@@ -2,6 +2,15 @@
 
 ### files  
 
+- assets // .wav, .mp3  
+
+- bash_ffmpeg // .sh  
+
+- ex_FFT_STFT  
+  - 【Scipy】FFT、STFTとwavelet変換で遊んでみた♬～⑦リアルタイム・スペクトログラム(Qiita)    [https://qiita.com/MuAuan/items/85b077640901dbb29514](https://qiita.com/MuAuan/items/85b077640901dbb29514)  
+
+- result  
+
 - print_info.py // .wav の情報  
   ```
   - - - - -
